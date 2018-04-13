@@ -16,7 +16,7 @@ date: 2018-04-13 22:30:00
 
 ### Education
 
-- HUTECH University, HCMC
+- [HUTECH University](https://www.hutech.edu.vn/), HCMC
   + BIT
   + 2012 - 2016
 
