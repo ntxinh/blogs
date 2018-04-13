@@ -79,7 +79,7 @@ theme: landscape
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/nguyentrucxinh/blogs.git
+  repo: git@github.com:nguyentrucxinh/blogs.git
   branch: gh-pages
   message: Deploy static
 
