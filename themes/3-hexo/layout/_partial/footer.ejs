@@ -7,23 +7,23 @@
 <script>
     var img_resize = '<%=theme.img_resize %>';
     function initArticle() {
-        /*渲染对应的表格样式*/
+        /*Render the corresponding table style*/
         <% if(theme.table){ %>
             $("#post .pjax table").addClass("<%=theme.table%>");
         <% } %>
 
-        /*渲染打赏样式*/
+        /*Render tip style*/
         <% if(theme.reward){%>
         $("input[name=pay]").on("click", function () {
-            if($("input[name=pay]:checked").val()=="weixin"){
-                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            if($("input[name=pay]:checked").val()=="zalo"){
+                $(".shang_box .shang_payimg .pay_img").addClass("zalo_img");
             } else {
-                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+                $(".shang_box .shang_payimg .pay_img").removeClass("zalo_img");
             }
         })
         <%}%>
 
-        /*高亮代码块行号*/
+        /*Highlight code block line number*/
         <%if(theme.highlight && theme.highlight.on && theme.highlight.lineNum){%>
         $('pre code').each(function(){
             var lines = $(this).text().trim().split('\n').length, widther='';
@@ -40,12 +40,12 @@
         });
         <%}%>
 
-        /*访问数量*/
+        /*Number of visits*/
         <%if(theme.visit_counter && theme.visit_counter.on) {%>
         $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
         <%}%>
 
-        /*代码高亮，行号对齐*/
+        /*Code highlighting, line number alignment*/
         $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
 
         <% if (theme.img_resize == 'photoSwipe') {%>

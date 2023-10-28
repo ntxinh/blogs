@@ -17,5 +17,5 @@ post:
 donation:
   button: "赏"
   headline: "喜欢就点赞,疼爱就打赏"
-  alipay: "支付宝"
-  weixin: "微信"
+  momo: "momo"
+  zalo: "zalo"

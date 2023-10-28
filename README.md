@@ -10,6 +10,9 @@ cd blogs
 hexo server
 
 git clone https://github.com/yelog/hexo-theme-3-hexo.git themes/3-hexo
+
+hexo new "Resume"
+# hexo generate
 ```
 
 - http://localhost:4000

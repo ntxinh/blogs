@@ -1,219 +1,219 @@
 version: 1.1.0
-# 你的头像url
+# your avatar url
 avatar: /img/avatar.jpg
 favicon: /img/avatar.jpg
 
-#如果博客放置位置不是根目录，则可以通过配置此路径解决静态文件路径错误问题
-# 比如访问地址为 yelog.org/blog 那就需要配置为 blog_path: /blog 才能正常访问
-blog_path: /blogs
+#If the blog placement location is not the root directory, you can solve the static file path error problem by configuring this path.
+# For example, if the access address is ntxinh.github.io/blog, it needs to be configured as blog_path: /blog for normal access.
+blog_path: /
 
-#链接图标 显示顺序和下面顺序一致
+#The link icons are displayed in the same order as below
 link:
-  theme: color # 链接样式，color: 彩色图标  white: 黑白图标
+  theme: color # Link style, color: color icon white: black and white icon
   items:
-    rss: /atom.xml
-    github: https://github.com/yelog
-    facebook: https://www.facebook.com/faker.tops
-    twitter:
-    linkedin:
-    instagram: https://www.facebook.com/faker.tops
-    reddit: https://www.reddit.com/user/yelog/
-    weibo: http://weibo.com/u/2307534817
-    jianshu: https://www.jianshu.com/u/ff56736de7cf
-    zhihu: https://www.zhihu.com/people/jaytp/activities
+    rss: # /atom.xml
+    github: https://github.com/ntxinh
+    facebook:
+    twitter: https://twitter.com/nguyentrucxinh
+    linkedin: https://linkedin.com/in/ntxinh
+    instagram:
+    reddit:
+    weibo:
+    jianshu:
+    zhihu:
     csdn:
-    oschina: https://my.oschina.net/yelog
+    oschina:
     juejin:
-    email: jaytp@qq.com
-    qq: 872336115
-    kugou: https://www.kugou.com/
-    neteasemusic: https://music.163.com/#/user/home?id=88151013
+    email: ntxinh@outlook.com
+    qq:
+    kugou:
+    neteasemusic:
 
-##########多作者模式############
+##########multi-author mode############
 author:
   on: false
   authors:
-    author1: 阁主
-    author2: 小马哥
+    author1: ntxinh
+    author2:
 ##############################
 
-# 文章分类设置
+# Article classification settings
 category:
-  num: true # 分类显示文章数
-  sub: true # 开启多级分类
+  num: true # Display the number of articles by category
+  sub: true # Enable multi-level classification
   sort:
-    - 读书
-    - 工具
-    - 大前端
-    - 后端
-    - 数据库
-    - 运维
+    - Read
+    - Tool
+    - Big front-end
+    - Rear end
+    - Database
+    - Operation and maintenance
   width:
-    lg: 120 # 1468px<屏幕宽度 左侧分类宽度
-    md: 100 # 1024px<屏幕宽度<=1468px 左侧分类宽度
-    sm: 100 # 426px<屏幕宽度<=1024px 左侧分类宽度（ipad）
-# 多级分类说明：
-# 比如在文章中设置多个菜单，则默认为多级菜单，即：工具>hexo
+    lg: 120 # 1468px<Screen width Left category width
+    md: 100 # 1024px<Screen width <=1468px Left category width
+    sm: 100 # 426px<Screen width <=1024px left category width (ipad)
+# Multi-level classification description:
+# For example, if you set multiple menus in an article, the default is a multi-level menu, that is: Tools>hexo
 # categories:
-#   - 工具
+#   - Tool
 #   - hexo
 
-# 快捷键
+# Shortcut key
 shortcutKey: true
 
-# 左下角自定义菜单
+# Custom menu in the lower left corner
 menu:
-  about:  # '关于' 按钮
-    on: true # 是否显示
-    url: /about  # 跳转链接
-    type: 1 # 跳转类型 1：站内异步跳转 2：当前页面跳转 3：打开新的tab页
-  friend: # '友链' 按钮
-    on: true # 是否展示
-  menus: # 添加的其他菜单写在 menus 下，如下三个菜单：动态菜单1、动态菜单2、动态菜单3
-    相册:
+  about:  # 'About' button
+    on: true # Whether to display
+    url: https://ntxinh.github.io #/about  # Jump link
+    type: 3 # Jump type 1: Asynchronous jump within the site 2: Jump to the current page 3: Open a new tab page
+  friend: # 'Friend link' button
+    on: false # Whether to display
+  menus: # The other added menus are written under menus, as follows: dynamic menu 1, dynamic menu 2, dynamic menu 3
+    相册: # photo album
       on: false
       url: /photo
-      type: 1  # 跳转类型 1：站内异步跳转
-    叶落阁:
+      type: 1  # Jump type 1: Asynchronous jump within the site
+    叶落阁: # Ye Luo Pavilion
       on: false
-      url: http://yelog.org/
-      type: 2  # 跳转类型 2：当前页面跳转
+      url: https://ntxinh.github.io/
+      type: 2  # Jump type 2: Jump to the current page
     github:
       on: false
-      url: https://github.com/yelog
-      type: 3  # 跳转类型 3：打开新的tab页
+      url: https://github.com/ntxinh
+      type: 3  # Jump type 3: Open a new tab page
 
-# 文末声明
-article_txt: 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com
+# Statement at the end of the article
+article_txt: Please indicate the source when reprinting. You are welcome to verify the sources cited in the article, and you are welcome to point out any errors or unclear expressions. You can comment in the comment area below or email to ntxinh@outlook.com
 
-bottom_text: ©2016-2020 Yelog
-# 自定义页面最下方的站点版权信息
-# 如果不填，则自定义为 ©2017 author (这个author为hexo根目录_config.yml中配置的)
+bottom_text: ©2023-Present ntxinh's blog
+# Customize the site copyright information at the bottom of the page
+# If left blank, it will be customized as ©2017 author (this author is configured in hexo root directory _config.yml)
 
-# 底部备案号
+# Bottom registration number
 miit:
   on: false
-  info: 京ICP证030173号
-  url: http://beian.miit.gov.cn/ # 默认链接为 http://beian.miit.gov.cn/
+  info: Beijing ICP Certificate No. 030173
+  url: http://beian.miit.gov.cn/ # The default link is http://beian.miit.gov.cn/
 
 
 reward: true
-# true 开启打赏功能
+# true Turn on reward function
 
 searchAll: false
-# true 启用全文搜索
-# 开启此功能需要下面操作：
-# 1. 在 hexo 根目录 执行 npm install hexo-generator-search --save 安装插件
-# 2. 在 hexo 根目录的 _config.xml 中添加下面内容
+# true Enable full text search
+# Turning on this feature requires the following operations:
+# 1. Execute npm install hexo-generator-search --save in the hexo root directory to install the plug-in
+# 2. Add the following content to _config.xml in the hexo root directory
 # search:
 #   path: search.xml
 #   field: post
 
 
 copyright: false
-# Copyright info. of post | 文末版权信息
+# Copyright info. of post | Copyright information at the end of the article
 
 word_count: false
-# true 开启字数统计
-# 开启此功能需要安装插件 ：在 hexo根目录 执行npm i hexo-wordcount --save
+# true turns on word count
+# To enable this function, you need to install a plug-in: execute npm i hexo-wordcount --save in the hexo root directory
 
 
-# 不蒜子网站计数设置
+# No website count setting
 # http://ibruce.info/2015/04/04/busuanzi/
 visit_counter:
   on: true
   site_visit: true
   page_visit: true
 
-##########自定义样式设置##############
-# Table of contents | 文章目录
+##########Custom style settings##############
+# Table of contents | Article directory
 toc:
-  max_depth: 3  # 1 - 6 (h1-h6) 目录最大级数
+  max_depth: 3  # 1 - 6 (h1-h6) The maximum number of directory levels
 
-#文章列表 鼠标移上去的样式, 为空时使用默认效果
+#Article list The style when the mouse is moved up. If it is empty, the default effect will be used.
 article_list:
-  title: '#383636' # 文章列表标题颜色
-  datetime: '#5e5e5f' # 文章发布日期颜色
+  title: '#383636' # Article list title color
+  datetime: '#5e5e5f' # Article publication date color
   hover:
-    background: '#e2e0e0'  # 背景色:提供几种：'#c1bfc1'  '#fbf4a8'
-    color:     # 文字颜色 提供几种：'#ffffff'
-# 注意：由于颜色如果包含#，使用单引号 ' 引起来
+    background: '#e2e0e0'  # Background color: Several types are provided: '#c1bfc1' '#fbf4a8'
+    color:     # There are several text colors available: '#ffffff'
+# Note: If the color contains #, use single quotes '
 
-# 文章列表背景图
+# Article list background image
 article_bg_img:
-  on: false # 是否开启
+  on: false # Whether to turn on
   src: https://i.loli.net/2019/07/22/5d3521411f3f169375.png
-  opacity: 0.3 # 背景图透明度，范围 0 ～ 1
+  opacity: 0.3 # Background image transparency, range 0 ～ 1
 
-# 列表样式
+# list style
 list: normal
-# normal : 普通样式
-# thread : 列表外圈有一个线框
+# normal : normal style
+# thread: There is a wireframe in the outer circle of the list
 
-# 引用块样式
+#Quote block style
 blockquote: github
-# github : 类似于github的引用快
-# bracket : 类似于左右两个大括号的样式
+# github: similar to github reference fast
+# bracket: similar to the style of two left and right braces
 
-# table 的样式
+# table style
 table: green_title
-# 为空时类似github的table样式
-# green 绿色样式
-# green_title 头部为青色的table样式
+# When empty, it is similar to github’s table style
+# green green style
+# green_title table style with cyan header
 
-# 首页背景图
+# Home page background image
 index_bg_img:
-# 其他页面背景图
+# Other page background images
 other_bg_img:
 
-# 点击图片放大样式
+# Click on the image to enlarge the style
 img_resize: default
-# 可选值：
-# default: 默认(自己写的简单的放大)
-# photoSwipe: 使用photoSwipe插件
+# Optional values:
+# default: Default (simple amplification written by myself)
+# photoSwipe: Use photoSwipe plugin
 
-# 代码段高亮样式，markdown 语法 `demo`
+# Code segment highlighting style, markdown syntax `demo`
 code:
   theme: dark-red
-# 支持主题：
-# dark-red: 红字(默认)
-# github: github样式（灰色底，黑字）
+#Supported themes:
+# dark-red: red (default)
+# github: github style (gray background, black text)
 
 highlight:
-  on: true # true开启代码高亮，开启需要关闭博客 _config.yml 中的 highlight
-  lineNum: false # true显示行号
-  copy: true # 复制功能
+  on: true # true turns on code highlighting. To turn it on, you need to turn off the highlight in the blog _config.yml.
+  lineNum: false # true displays line number
+  copy: true # copy function
   theme: atom-light
-# 代码高亮主题,效果可以查看 https://highlightjs.org/static/demo/
-# 支持主题：
-# sublime : 参考sublime的高亮主题
-# darcula : 参考idea中的darcula的主题
-# atom-dark : 参考Atom的dark主题
-# atom-light : 参考Atom的light主题
-# github : 参考GitHub版的高亮主题
-# github-gist : GitHub-Gist主题
-# brown-paper : 牛皮纸效果
-# gruvbox-light : gruvbox的light主题
-# gruvbox-dark ： gruvbox的dark主题
-# rainbow :
+# Code highlighting theme, the effect can be viewed at https://highlightjs.org/static/demo/
+#Supported themes:
+# sublime: Refer to sublime’s highlight theme
+#darcula: Refer to the darcula theme in idea
+# atom-dark: Reference to Atom’s dark theme
+# atom-light: Reference to Atom’s light theme
+# github : Refer to the GitHub version of the highlighted theme
+# github-gist : GitHub-Gist theme
+#brown-paper : Kraft paper effect
+# gruvbox-light : light theme for gruvbox
+#gruvbox-dark: dark theme for gruvbox
+#rainbow :
 # railscasts :
-# sunburst :
-# kimbie-dark :
-# kimbie-light :
-# school-book : 纸张效果
-# zenbum : oschina 也选择此高亮主题
+#sunburst :
+#kimbie-dark :
+#kimbie-light :
+#school-book : paper effect
+#zenbum : oschina also choose this highlighted theme
 
-# MathJax 数学公式支持
+# MathJax mathematical formula support
 mathjax:
-  on: true #是否启用
-  per_page: false # 若只渲染单个页面，此选项设为false，页面内加入 mathjax: true
+  on: true #Whether to enable
+  per_page: false # If only a single page is rendered, set this option to false and add mathjax: true to the page.
 
-# Mermaid 支持
+# Mermaid support
 mermaid:
   on: false
   cdn: //cdn.jsdelivr.net/npm/mermaid@8.4.2/dist/mermaid.min.js
   #cdn: //cdnjs.cloudflare.com/ajax/libs/mermaid/8.3.1/mermaid.min.js
-  options: # 更多配置信息可以参考 https://mermaidjs.github.io/#/mermaidAPI
+  options: # For more configuration information, please refer to https://mermaidjs.github.io/#/mermaidAPI
     theme: 'default'
     startOnLoad: true
     flowchart:
@@ -222,70 +222,70 @@ mermaid:
 
 ##############################
 
-# 友情链接
+# Links
 friends:
-  叶落阁: http://yelog.org/
+  叶落阁: https://ntxinh.github.io/
 
-##########评论设置#############
+##########Comment settings#############
 comment:
   on: false
-  type: gitalk  # 评论系统：gitalk、disqus、gitment、utteranc、livere,注意：使用时，在下方对应位置进行配置
-  comment_count: true  # 文章标题下方显示评论数 目前仅支持 gitalk 和 disqus
-  ## 使用说明 https://yelog.org//2020/05/23/3-hexo-comment/
-# 各评论系统配置 ↓↓
+  type: gitalk  # Comment system: gitalk, disqus, gitment, utteranc, livere, note: when using, configure it in the corresponding location below
+  comment_count: true # Display the number of comments below the article title. Currently only supports gitalk and disqus.
+  ## Instructions for use https://yelog.org//2020/05/23/3-hexo-comment/
+# Configuration of each comment system ↓↓
 
 disqus:
   shortname:
-  # disqus评论系统， 2016年9月被GFW认证，大陆不能使用。
-  # 获取shortname：https://help.disqus.com/customer/en/portal/articles/466208-what-s-a-shortname-
+  # disqus comment system was certified by GFW in September 2016 and cannot be used in mainland China.
+  # Get shortname: https://help.disqus.com/customer/en/portal/articles/466208-what-s-a-shortname-
 
 
 gitalk:
-  githubID: yelog
-  repo: yelog.github.io
+  githubID: ntxinh
+  repo: ntxinh.github.io
   ClientID:
   ClientSecret:
-  adminUser: yelog
+  adminUser: ntxinh
   distractionFreeMode: true
   language: en
   perPage: 10
-# gitalk：利用github issue制作的第三方聊天插件
+#gitalk: A third-party chat plug-in made using github issue
 # https://github.com/gitalk/gitalk
-# 参数介绍：
-# githubID: github用户名
-# repo: 使用哪个仓库的issue
-# ClientID 和 ClientSecret 创建 OAuth application 就会生成：https://github.com/settings/applications/new
-# adminUser: 必须为上面仓库的合作者（有写入权限），使用自己的 github 用户名即可
-# distractionFreeMode: 全屏遮罩效果
-# language: 语言：支持：en / zh-CN / zh-TW 三种
-# perPage: 每次加载的数据大小，默认10，最大100
+# Parameter introduction:
+#githubID: github username
+# repo: Which repository to use for the issue
+# ClientID and ClientSecret will be generated when creating OAuth application: https://github.com/settings/applications/new
+# adminUser: must be a collaborator (with write permission) of the above warehouse, just use your own github username
+#distractionFreeMode: full screen mask effect
+# language: Language: Support: en / zh-CN / zh-TW three types
+# perPage: Data size loaded each time, default 10, maximum 100
 
 
 gitment:
-  owner: yelog
-  repo: yelog.github.io
+  owner: ntxinh
+  repo: ntxinh.github.io
   client_id:
   client_secret:
-  # gitment : 通过github issue实现的评论系统
-  # 开源地址 : https://github.com/imsun/gitment
-  # 使用说明 :
+  # gitment: Comment system implemented through github issue
+  # Open source address: https://github.com/imsun/gitment
+  # Instructions for use :
 
 livere:
   data_uid:
-  # 来必力: http://livere.com/
-  # 使用说明 : https://yelog.org//2020/05/23/3-hexo-comment/
+  # Livere: http://livere.com/
+  # Instructions for use: https://yelog.org//2020/05/23/3-hexo-comment/
 
 utteranc:
-  repo: xxx/xxx.github.io # 承载评论的仓库，填上自己新建的仓库
-  issue_term: pathname    # Issue 与 博客文章 之间映射关系
-  label: utteranc         # 创建的 Issue 添加的标签
-  theme: github-light     # 主题，可选主题请查看官方文档 https://utteranc.es/#heading-theme
-# 官方文档 https://utteranc.es/
-# 使用说明 https://yelog.org//2020/05/23/3-hexo-comment/
+  repo: xxx/xxx.github.io # The warehouse that hosts comments, fill in your newly created warehouse
+  issue_term: pathname # Mapping relationship between Issue and blog post
+  label: utteranc # Label added to the created Issue
+  theme: github-light # Theme, please check the official documentation for optional themes https://utteranc.es/#heading-theme
+#Official documentation https://utteranc.es/
+# Instructions for use https://yelog.org//2020/05/23/3-hexo-comment/
 
 ##############################
 
-##########CND设置#############
+##########CDN settings#############
 CDN:
   jquery: //cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js
   jquery_cookie: //cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js
