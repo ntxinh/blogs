@@ -5,7 +5,7 @@ favicon: /img/avatar.jpg
 
 #If the blog placement location is not the root directory, you can solve the static file path error problem by configuring this path.
 # For example, if the access address is ntxinh.github.io/blog, it needs to be configured as blog_path: /blog for normal access.
-blog_path: /
+blog_path: /blogs
 
 #The link icons are displayed in the same order as below
 link:
